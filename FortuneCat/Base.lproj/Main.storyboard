@@ -19,9 +19,6 @@
                                 <rect key="frame" x="129" y="596" width="116" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ok, Let's do this!"/>
-                                <connections>
-                                    <segue destination="EOJ-zb-Stf" kind="show" id="HdY-5k-E5I"/>
-                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZ4-Uo-OaU">
                                 <rect key="frame" x="8" y="155" width="359" height="191"/>
@@ -47,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="93.103448275862078"/>
+            <point key="canvasLocation" x="-711" y="775"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lJD-Qk-EOQ">
@@ -58,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dkb-au-hXr"/>
+                        <segue destination="EOJ-zb-Stf" kind="relationship" relationship="rootViewController" id="Nxf-hd-GK0"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lki-7D-UrX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -73,17 +70,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqE-iO-lDL" userLabel="MoneyTextField">
-                                <rect key="frame" x="94" y="290" width="186" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="textField:" destination="1Ix-0J-CMg" eventType="editingDidEnd" id="b6X-vR-Jxe"/>
-                                </connections>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tc-7t-tEw">
-                                <rect key="frame" x="156" y="544" width="62" height="60"/>
+                                <rect key="frame" x="156" y="543" width="62" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="This is it!"/>
                                 <connections>
@@ -91,6 +79,15 @@
                                     <segue destination="3va-NC-BaL" kind="show" id="UE5-tG-VUn"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqE-iO-lDL" userLabel="MoneyTextField">
+                                <rect key="frame" x="76" y="316" width="223" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textField:" destination="1Ix-0J-CMg" eventType="editingDidEnd" id="b6X-vR-Jxe"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="KiQ-hn-KQa"/>
@@ -103,7 +100,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEJ-UJ-dd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="1Ix-0J-CMg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="877.60000000000002" y="92.203898050974516"/>
+            <point key="canvasLocation" x="184.80000000000001" y="89.505247376311857"/>
         </scene>
         <!--My Fortune View Controller-->
         <scene sceneID="Rsv-9L-jdl">
@@ -171,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzc-IC-pMP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="92.203898050974516"/>
+            <point key="canvasLocation" x="1130" y="90"/>
         </scene>
     </scenes>
 </document>

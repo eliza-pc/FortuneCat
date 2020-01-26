@@ -9,15 +9,19 @@
 import Foundation
 import UIKit
 
-class CallToActionViewControlle: UIViewController {
-
-    @IBAction func textField(_ sender: Any) {
-    }
+class CallToActionViewController: UIViewController, UITextFieldDelegate{
     
-    
+    @IBOutlet weak var moneyTextField: UITextField!
+   
+    var moneyText: String = ""
+    let defaults = UserDefaults.standard
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    @IBAction func ThisIsItButton(_ sender: Any) {
+         UserDefaults.standard.set(moneyTextField.text, forKey: "moneyText")
     }
     
    

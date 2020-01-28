@@ -63,10 +63,23 @@ class CallToActionViewController: UIViewController, UITextFieldDelegate{
         @objc func dismissKeyboard() {
             //Causes the view (or one of its embedded text fields) to resign the first responder status.
             view.endEditing(true)
+            
+            
     }
     
     @IBAction func ThisIsItButton(_ sender: Any) {
          UserDefaults.standard.set(moneyTextField.text, forKey: "moneyText")
+        
+        if moneyTextField.text == "" {
+                  
+                  let message: String = "Preencha todos os campos!"
+                  let alert = UIAlertController(title:title,message: message, preferredStyle: .alert)
+                  let action = UIAlertAction(title: "Ok",style: .default, handler: nil)
+                  
+                  alert.addAction(action)
+                  
+                  present(alert, animated: true, completion: nil)
+        }
     }
     
    

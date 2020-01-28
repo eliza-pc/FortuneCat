@@ -48,12 +48,12 @@ class MyFortuneViewController: UIViewController, UITextFieldDelegate{
         varDreamsMoney = Float(totalOfMoney!)! * 10.0 / 100
       
         
-        essentialMoneyLabel.text = "Essential Money: \(essentialMoney)"
-        educationMoneyLabel.text = "Education Money: \(educationMoney)"
-        freeMoney.text = "Free Money: \(varFreeMoney)"
-        aposentadoriaMoneyLabel.text = "Aposentadoria: \(aposentadoriaMoney)"
-        emergencyMoneyLabel.text = "Emergency: \(emergencyMoney)"
-        dreamsMoney.text = "Dreams: \(varDreamsMoney)"
+        essentialMoneyLabel.text = "\(essentialMoney)"
+        educationMoneyLabel.text = "\(educationMoney)"
+        freeMoney.text = "\(varFreeMoney)"
+        aposentadoriaMoneyLabel.text = "\(aposentadoriaMoney)"
+        emergencyMoneyLabel.text = "\(emergencyMoney)"
+        dreamsMoney.text = "\(varDreamsMoney)"
         
     }
    

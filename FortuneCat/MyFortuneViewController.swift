@@ -13,6 +13,8 @@ class MyFortuneViewController: UIViewController, UITextFieldDelegate{
     
     let totalOfMoney = UserDefaults.standard.string(forKey: "moneyText")
     
+ 
+    
     var moneyForThePresent: Float = 0.0
     var moneyForTheFuture: Float = 0.0
     
@@ -33,6 +35,7 @@ class MyFortuneViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         
         super.viewDidLoad()
+       
         // Do any additional setup after loading the view.
         essentialMoneyLabel.text = "My total of money is \(String(describing: totalOfMoney!))!"
         
@@ -56,5 +59,6 @@ class MyFortuneViewController: UIViewController, UITextFieldDelegate{
         dreamsMoney.text = "\(varDreamsMoney)"
         
     }
-   
+    
+  
 }

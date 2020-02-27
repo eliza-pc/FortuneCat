@@ -70,10 +70,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="Wyd-CB-Tab">
-                                <rect key="frame" x="3" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tc-7t-tEw">
                                 <rect key="frame" x="122" y="569" width="136" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -83,10 +79,6 @@
                                     <segue destination="3va-NC-BaL" kind="show" id="UE5-tG-VUn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Olá Estranho! Descul" translatesAutoresizingMaskIntoConstraints="NO" id="OGZ-kI-UYj">
-                                <rect key="frame" x="52" y="299" width="271" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe aqui o valor. Ex: 1200.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqE-iO-lDL" userLabel="MoneyTextField">
                                 <rect key="frame" x="57" y="426" width="266" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -97,8 +89,24 @@
                                     <action selector="textField:" destination="1Ix-0J-CMg" eventType="editingDidEnd" id="b6X-vR-Jxe"/>
                                 </connections>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Olá Estranho! Descul" translatesAutoresizingMaskIntoConstraints="NO" id="OGZ-kI-UYj">
+                                <rect key="frame" x="52" y="299" width="271" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="Wyd-CB-Tab">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wyd-CB-Tab" secondAttribute="height" multiplier="375:667" id="5fy-UT-ukc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Wyd-CB-Tab" firstAttribute="bottom" secondItem="KiQ-hn-KQa" secondAttribute="bottom" id="A0U-uH-hnA"/>
+                            <constraint firstItem="Wyd-CB-Tab" firstAttribute="leading" secondItem="KiQ-hn-KQa" secondAttribute="leading" id="Nlf-Gs-Qzf"/>
+                            <constraint firstItem="Wyd-CB-Tab" firstAttribute="trailing" secondItem="KiQ-hn-KQa" secondAttribute="trailing" id="bJE-X8-Yp8"/>
+                            <constraint firstItem="Wyd-CB-Tab" firstAttribute="top" secondItem="RRe-26-N8H" secondAttribute="top" id="vCj-ED-xHB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KiQ-hn-KQa"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ll8-RZ-tGt"/>

@@ -35,7 +35,8 @@ class MyFortuneViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         
         super.viewDidLoad()
-       
+        navigationController!.navigationBar.isTranslucent = true
+        
         // Do any additional setup after loading the view.
         essentialMoneyLabel.text = "My total of money is \(String(describing: totalOfMoney!))!"
         

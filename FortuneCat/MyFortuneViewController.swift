@@ -54,7 +54,7 @@ class MyFortuneViewController: UIViewController, UITextFieldDelegate{
         essentialMoneyLabel.text = "\(essentialMoney)"
         educationMoneyLabel.text = "\(educationMoney)"
         freeMoney.text = "\(varFreeMoney)"
-        aposentadoriaMoneyLabel.text = "\(aposentadoriaMoney)"
+       // aposentadoriaMoneyLabel.text = "\(aposentadoriaMoney)"
         emergencyMoneyLabel.text = "\(emergencyMoney)"
         dreamsMoney.text = "\(varDreamsMoney)"
         

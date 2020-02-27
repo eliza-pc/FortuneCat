@@ -20,6 +20,8 @@ class CallToActionViewController: UIViewController, UITextFieldDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
             //Looks for single or multiple taps.
+  
+        
             let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
             //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
             //tap.cancelsTouchesInView = false
@@ -80,6 +82,8 @@ class CallToActionViewController: UIViewController, UITextFieldDelegate{
                   
                   present(alert, animated: true, completion: nil)
         }
+        
+        dismissKeyboard()
     }
     
    

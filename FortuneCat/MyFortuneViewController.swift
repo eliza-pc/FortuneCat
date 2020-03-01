@@ -47,9 +47,9 @@ class MyFortuneViewController: UIViewController, UITextFieldDelegate{
         educationMoney = Float(totalOfMoney!)! * 5.0 / 100
         varFreeMoney = Float(totalOfMoney!)! * 10.0 / 100
         
-        emergencyMoney = Float(totalOfMoney!)! * 10.0 / 100
-        aposentadoriaMoney = Float(totalOfMoney!)! * 10.0 / 100
-        varDreamsMoney = Float(totalOfMoney!)! * 10.0 / 100
+        emergencyMoney = Float(totalOfMoney!)! * 15.0 / 100
+    //    aposentadoriaMoney = Float(totalOfMoney!)! * 10.0 / 100
+        varDreamsMoney = Float(totalOfMoney!)! * 15.0 / 100
       
         
         essentialMoneyLabel.text = "\(essentialMoney)"

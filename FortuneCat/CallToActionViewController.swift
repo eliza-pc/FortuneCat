@@ -18,6 +18,7 @@ class CallToActionViewController: UIViewController, UITextFieldDelegate{
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
         // Do any additional setup after loading the view.
             //Looks for single or multiple taps.
   

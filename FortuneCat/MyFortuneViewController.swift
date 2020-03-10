@@ -35,6 +35,7 @@ class MyFortuneViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
         navigationController!.navigationBar.isTranslucent = true
         
         // Do any additional setup after loading the view.
